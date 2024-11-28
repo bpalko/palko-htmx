@@ -1,0 +1,40 @@
+/* static/styles.css */
+
+/* Add some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center text in the body */
+}
+.header {
+    display: flex;
+    justify-content: center; /* Center the logo */
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8; /* Light background for the header */
+}
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px; /* Space between logo and title */
+}
+h1 {
+    margin: 0; /* Remove default margin */
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.welcome-container {
+    margin-top: 40px; /* Space above the welcome message */
+}

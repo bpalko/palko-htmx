@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Custom Firearm</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+</head>
+<body>
+    <h1>Assemble Your Custom Firearm</h1>
+    <form id="build-form" hx-post="/create-build" hx-target="#result" hx-swap="innerHTML">
+        <label for="barrel">Choose a Barrel:</label>
+        <select id="barrel" name="barrel" required>
+            <option value="">--Select Barrel--</option>
+            <option value="standard_barrel">Standard Barrel</option>
+            <option value="match_barrel">Match Barrel</option>
+        </select>
+
+        <label for="grip">Choose a Grip:</label>
+        <select id="grip" name="grip" required>
+            <option value="">--Select Grip--</option>
+            <option value="standard_grip">Standard Grip</option>
+            <option value="ergonomic_grip">Ergonomic Grip</option>
+        </select>
+
+        <label for="sight">Choose a Sight:</label>
+        <select id="sight" name="sight" required>
+            <option value="">--Select Sight--</option>
+            <option value="iron_sights">Iron Sights</option>
+            <option value="red_dot">Red Dot Sight</option>
+        </select>
+
+        <button type="submit">Build My Firearm</button>
+    </form>
+
+    <div id="result"></div>
+</body>
+</html>
